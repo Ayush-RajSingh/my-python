@@ -1,0 +1,23 @@
+class calculator :
+
+    def set (self,n1,n2):
+        self.n3=n1
+        self.n4=n2
+
+    def add(self):
+        self.n5= self.n3 + self.n4
+        return self.n5
+
+    def sub(self):
+        self.n6= self.n3 - self.n4
+        return self.n6
+
+if __name__ == '__main__':
+        n1 = int(input("Enter num 1"))
+        n2 = int(input("enter num 2 "))
+        c = calculator()
+        c.set(n1,n2)
+        n5=c.add()
+        n6=c.sub()
+        print("addititon is",n5)
+        print("sub is ",n6)

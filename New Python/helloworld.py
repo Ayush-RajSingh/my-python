@@ -1,0 +1,2 @@
+#firstcode
+print("hello world")

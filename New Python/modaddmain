@@ -1,0 +1,21 @@
+import modadd
+
+
+n = int(input("Enter 1. for intadd \n " "2. for floatadd \n"  "3. stringadd"  ))
+if(n == 1):
+    a = int(input("Enter first Number:-"))
+    b = int(input("Enter second Number:-"))
+    c=modadd.intadd(a,b)
+    print("your int additon is ",c)
+elif(n == 2):
+    d = float(input("Enter first float Number:-"))
+    f = float(input("Enter second float Number:-"))
+    g=modadd.floatadd(d,f)
+    print("your float addition is ",g)
+elif(n == 3):
+    h = str(input("Enter first string:-"))
+    i = str(input("Enter second string:-"))
+    j=modadd.stringadd(h,i)
+    print("your string answer is ",j)
+else:
+    print("invalid input")

@@ -1,0 +1,18 @@
+import tkinter as tk
+
+root = tk.Tk()
+root.title('text copy')
+root.geometry("850x500")
+
+user_input = tk.StringVar(root)
+answer = 3
+
+def verify():
+    print(int(user_input.get()) == answer)  # calling get() here!
+
+entry = tk.Entry(root, textvariable=user_input)
+entry.pack()
+check = tk.Button(root, text='check 3', command=verify)
+check.pack()
+
+root.mainloop()

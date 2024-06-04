@@ -1,0 +1,12 @@
+from tkinter import Tk 
+import os  
+class Gui:
+    def __init__(self):
+        self.t = Tk()
+        self.t.wm_title("animals ")
+        self.t.attributes("-fullscreen", True) 
+        self.t.image_types("5pb3rj0r25c61.png")
+        self.t.wm_geometry("850x500")
+        self.t.mainloop()
+if __name__ == '__main__':
+    g = Gui()
